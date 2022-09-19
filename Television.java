@@ -1,11 +1,18 @@
-public class Television {
+public class Television extends Book {
   private String brand;
   private int size;
   private int number;
+  private Book book;
   private boolean isOn;
 
 
   //Constructors
+
+  public Television(Book b) {
+       this();
+       book=b;
+  }
+
   public Television() {
     brand = "Samsung";
     size = 51;
@@ -39,9 +46,13 @@ public class Television {
     System.out.println("Brand: " + brand);
   }
 
+  public void findBook() {
+    System.out.println("OMG...I just saw " + tooString() + " while watching Bleach!!!" + "\n");
+  }
+
   @Override
   public String toString() {
-    return "Tv :" + brand + " is operating";  
+    return "The " + brand + " television" + " is currently playing Bleach" + "\n";  
   }
 
   // accessor

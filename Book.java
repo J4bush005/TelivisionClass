@@ -20,8 +20,8 @@
           this.pageNumber = pageNumber;
         }
       
-        public String toString() {
-          return "Title: " + title + " Author: " + author + " # of pages: " + pageNumber;
+        public String tooString() {
+          return "the book " + title + " by " + author + " which has " + pageNumber + " pages";
         }
       
         //methods
